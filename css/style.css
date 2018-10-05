@@ -1,0 +1,54 @@
+#moto {
+	display: block;
+	background: transparent;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+
+#moto-text {
+	color: azure;
+	font-size: 350%;
+	margin-top: 200px;
+	position: relative;
+	z-index: 1;
+}
+
+#bg-image {
+	width: 100%;
+	height: 600px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	z-index: 0;
+}
+
+.panel-row {
+	position: relative;
+	margin-top: 165px;
+}
+
+.panel-img {
+	width: 100%;
+	opacity: 0.7;
+	margin-top: -160px;
+	position: relative;
+	z-index: -1;
+}
+
+#gre-panel {
+	background: rgba(30, 144, 255, 0.7);
+}
+
+#gmat-panel {
+	background: rgba(0, 255, 127, 0.7);
+}
+
+#gate-panel {
+	background: rgba(220, 20, 60, 0.7);
+}
+
+#upsc-panel {
+	background: rgba(176, 196, 222, 0.7);
+}

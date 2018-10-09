@@ -9,24 +9,39 @@
 
 #moto-text {
 	color: azure;
-	font-size: 350%;
-	margin-top: 200px;
+	font-size: 640%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 35px;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 #bg-image {
-	width: 100%;
-	height: 600px;
+	width: 1400px;
+	height: 900px;
 	left: 0px;
-	top: 0px;
+	top: -65px;
 	position: absolute;
-	z-index: 0;
+	z-index: -1;
+}
+
+#web-name {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 25px;
+}
+
+.nav-trans {
+	margin-left: 20px;
+	color: navy;
+}
+
+.nav-trans:hover {
+	color: aqua;
 }
 
 .panel-row {
 	position: relative;
-	margin-top: 165px;
+	margin-top: 140px;
 }
 
 .panel-img {
@@ -37,19 +52,68 @@
 	z-index: -1;
 }
 
-#gre-panel {
-	background: rgba(30, 144, 255, 0.7);
+.flip-box {
+	position: absolute;
+	left: 0px;
+	background: transparent;
+	width: 100%;
+	height: 250px;
+	perspective: 1000px;
 }
 
-#gmat-panel {
-	background: rgba(0, 255, 127, 0.7);
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
 
-#gate-panel {
-	background: rgba(220, 20, 60, 0.7);
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+  
+  /* Position the front and back side */
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
 }
 
-#upsc-panel {
-	background: rgba(176, 196, 222, 0.7);
+.gre-panel-front {
+	background: rgba(3, 40, 250, 0.85);
 }
 
+.gre-panel-back {
+	background: rgba(3, 40, 250, 0.85);
+	transform: rotateY(180deg);
+}
+
+.gmat-panel-front {
+	background: rgba(0, 217, 255, 0.85);
+}
+
+.gmat-panel-back {
+	background: rgba(0, 217, 255, 0.85);
+	transform: rotateY(180deg);
+}
+
+.gate-panel-front {
+	background: rgba(101, 189, 18, 0.85);
+}
+
+.gate-panel-back {
+	background: rgba(101, 189, 18, 0.85);
+	transform: rotateY(180deg);
+}
+
+.upsc-panel-front {
+	background: rgba(216, 219, 48, 0.85);
+}
+
+.upsc-panel-back {
+	background: rgba(216, 219, 48, 0.85);
+	transform: rotateY(180deg);
+}

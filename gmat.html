@@ -8,52 +8,92 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>	
-  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">	
+
+  <link rel="stylesheet" href="css/footer-distributed.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/main.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-  <a class="navbar-brand" href="index.html">ASR</a>
+<nav class="navbar navbar-expand navbar-light">
+  <a class="navbar-brand" href="index.html"><span id="web-name">ASR</span></a>
   <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" href="index.html"><span class="nav-trans">Home</span></a>
+        </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">About Us</a>
+      <a class="nav-link" href="about.html"><span class="nav-trans">About</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="alumni.html"><span class="nav-trans">Alumni Connect</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="contact.html"><span class="nav-trans">Contact Us</span></a>
+      </li>
   </ul>
 </nav>
 
 <div class="container-fluid" style="margin-top: 80px">
-    <img src = "images/gmat-logo.png" alt = GMAT class = "center" id ="gmat-logo"><br><br>
-    <h1>Graduate Management Admission Test</h1><hr><br>
-    <p>The Graduate Management Admission Test is a computer adaptive test (CAT) intended to assess certain analytical, writing, quantitative, verbal, and reading skills in written English for use in admission to a graduate management program, such as an MBA. It requires knowledge of certain specific grammar and knowledge of certain specific algebra, geometry, and arithmetic. According to the test owning company, the Graduate Management Admission Council (GMAC), the GMAT assesses analytical writing and problem-solving abilities, while also addressing data sufficiency, logic, and critical reasoning skills that it believes to be vital to real-world business and management success. It can be taken up to five times a year. Attempts must be at least 16 days apart.</p>
-    <p>GMAT is a registered trademark of the Graduate Management Admission Council. More than 7,000 programs at approximately 2,300 graduate business schools around the world accept the GMAT as part of the selection criteria for their programs. Business schools use the test as a criterion for admission into a wide range of graduate management programs, including MBA, Master of Accountancy, Master of Finance programs and others. The GMAT is administered in standardized test centers in 114 countries around the world. According to a survey conducted by Kaplan Test Prep, the GMAT is still the number one choice for MBA aspirants despite the increasing acceptability of GRE scores. According to GMAC, it has continually performed validity studies to statistically verify that the exam predicts success in business school programs.</p><br>
-    <h3>General Information about GMAT</h3><hr>
-    <p>Acronym: GMAT<br>
-    Type: Computer-based standardized test<br>
-    Developer / administrator: Graduate Management Admission Council<br>
-    Knowledge / skills tested: Quantitative reasoning, verbal reasoning, integrated reasoning, analytical writing.<br>
-    Purpose: Admissions in graduate management programs of business schools.<br>
-    Year started:  1953; 65 years ago<br>
-    Duration: 3.5 hours[1]<br>
-    Score / grade range: Quantitative section: 0 to 60, in 1 point increments, 
-    Verbal section: 0 to 60, in 1 point increments, 
-    Integrated reasoning section: 1 to 8, in 1 point increments, 
-    Analytical writing assessment: 0.0 to 6.0, in 0.5 point increments.<br> 
-    Total score (from verbal and quantitative sections only): 200 to 800.<br>
-    Score / grade validity:  5 Years<br>
-    Offered: Multiple times a year.<br>
-    Countries / regions: 600 test centers in 114 countries.<br>
-    Languages: English<br>
-    Annual number of test takers:  261,248 (2016)<br>
-    Prerequisites / eligibility criteria : No official prerequisite. Intended for bachelors degree holders and undergraduate students who are about to graduate. Fluency in English assumed.<br>
-    Fee US$ 250<br>
-    Scores / grades used by: More than 7,000 programs at approximately 2,300 graduate business schools around the world accept the GMAT exam.<br>
-    Website: <a href="www.mba.com">www.mba.com</a></p>
+  <img src="images/gmat-logo.png" alt="GMAT" class="center" id="gmat-logo"><br><br>
+  <h1>Graduate Management Admission Test</h1><hr><br>
+  <p>The Graduate Management Admission Test is a computer adaptive test (CAT) intended to assess certain analytical, writing, quantitative, verbal, and reading skills in written English for use in admission to a graduate management program, such as an MBA. It requires knowledge of certain specific grammar and knowledge of certain specific algebra, geometry, and arithmetic. According to the test owning company, the Graduate Management Admission Council (GMAC), the GMAT assesses analytical writing and problem-solving abilities, while also addressing data sufficiency, logic, and critical reasoning skills that it believes to be vital to real-world business and management success. It can be taken up to five times a year. Attempts must be at least 16 days apart.</p>
+  <p>GMAT is a registered trademark of the Graduate Management Admission Council. More than 7,000 programs at approximately 2,300 graduate business schools around the world accept the GMAT as part of the selection criteria for their programs. Business schools use the test as a criterion for admission into a wide range of graduate management programs, including MBA, Master of Accountancy, Master of Finance programs and others. The GMAT is administered in standardized test centers in 114 countries around the world. According to a survey conducted by Kaplan Test Prep, the GMAT is still the number one choice for MBA aspirants despite the increasing acceptability of GRE scores. According to GMAC, it has continually performed validity studies to statistically verify that the exam predicts success in business school programs.</p><br>
+  <ul>
+      <li><a href = "#gen_info">General Info</a></li>
+      <li><a href ="#eligibility">Eligibility</a></li>
+      <li><a href = "#syllabus">Syllabus</a></li>
+      <li><a href = "top_coll">Top Colleges</a></li>
+    </ul>   
+  <h3>General Information about GMAT</h3><hr>
+  <p>Acronym: GMAT<br>
+  Type: Computer-based standardized test<br>
+  Developer / administrator: Graduate Management Admission Council<br>
+  Knowledge / skills tested: Quantitative reasoning, verbal reasoning, integrated reasoning, analytical writing.<br>
+  Purpose: Admissions in graduate management programs of business schools.<br>
+  Year started:  1953; 65 years ago<br>
+  Duration: 3.5 hours<br>
+  Score / grade range: Quantitative section: 0 to 60, in 1 point increments, 
+  Verbal section: 0 to 60, in 1 point increments, 
+  Integrated reasoning section: 1 to 8, in 1 point increments, 
+  Analytical writing assessment: 0.0 to 6.0, in 0.5 point increments.<br> 
+  Total score (from verbal and quantitative sections only): 200 to 800.<br>
+  Score / grade validity:  5 Years<br>
+  Offered: Multiple times a year.<br>
+  Countries / regions: 600 test centers in 114 countries.<br>
+  Languages: English<br>
+  Annual number of test takers:  261,248 (2016)<br>
+  Prerequisites / eligibility criteria : No official prerequisite. Intended for bachelors degree holders and undergraduate students who are about to graduate. Fluency in English assumed.<br>
+  Fee US$ 250<br>
+  Scores / grades used by: More than 7,000 programs at approximately 2,300 graduate business schools around the world accept the GMAT exam.<br>
+  Website: <a href="www.mba.com">www.mba.com</a></p>
+  <h3 id = "eligibility">Eligibility</h3>
+  <h3 id = "syllabus">Ssyllabus</h3>
+  <h3 id = "top_coll">Top Colleges</h3>
 </div>
+
+<footer class="footer-distributed">
+  <div class="footer-right">
+    <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+  </div>
+
+  <div class="footer-left">
+    <p class="footer-links">
+      <a href="#">Home</a>
+      ·
+      <a href="#">About</a>
+      ·
+      <a href="#">Alumni Connect</a>
+      ·
+      <a href="#">Contact Us</a>
+    </p>
+    <p>ASR &copy; 2018</p>
+  </div>
+
+</footer>
 
 </body>
 </html>

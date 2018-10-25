@@ -16,3 +16,14 @@ $(document).ready(function() {
         window.location.href = 'upsc.html';
     });
 });
+
+function getColleges(exam) {
+    console.log("Requesting ", exam);
+    var baseurl = "http://localhost/demo.php";
+    var url = baseurl + "?q=" + exam;
+
+    $.get(url, function (data, status) {
+        console.log("Status: ", status);
+        $("#div_coll").html(data);
+    })
+}

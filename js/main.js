@@ -25,5 +25,15 @@ function getColleges(exam) {
     $.get(url, function (data, status) {
         console.log("Status: ", status);
         $("#div_coll").html(data);
-    })
+    });
+}
+
+function getAlumni() {
+    console.log("Requesting alumni");
+    var url = "http://localhost/alumni.php";
+
+    $.get(url, function (data, status) {
+        console.log("Status: ", status);
+        $("#div_alumni").html(data);
+    });
 }

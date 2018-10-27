@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 function getColleges(exam) {
     console.log("Requesting ", exam);
-    var baseurl = "http://localhost/demo.php";
+    var baseurl = "http://localhost/colleges.php";
     var url = baseurl + "?q=" + exam;
 
     $.get(url, function (data, status) {
